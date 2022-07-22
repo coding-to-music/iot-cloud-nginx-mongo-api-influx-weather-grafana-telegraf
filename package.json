@@ -1,0 +1,21 @@
+{
+  "name": "iot-cloud-nginx-mongo-api-influx-weather-grafana-telegraf",
+  "version": "1.0.0",
+  "description": "IotCloud is a platform where you can automate your house easily and in an inexpensive way.",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "git add . && git commit -m Build && git push",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csanz91/IotCloud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csanz91/IotCloud/issues"
+  },
+  "homepage": "https://github.com/csanz91/IotCloud#readme"
+}
