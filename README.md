@@ -214,6 +214,26 @@ sudo apt install docker-ce docker-ce-cli containerd.io
 sudo docker run hello-world
 ```
 
+## Fix permissions problems when running `docker ps`
+
+```
+sudo usermod -aG docker $USER
+
+groups $USER
+
+sudo chown root:docker /var/run/docker.sock
+
+ls -l /var/run/docker.sock
+
+sudo systemctl reset-failed docker.service
+
+sudo systemctl restart docker.service
+
+sudo systemctl status docker.service
+
+docker ps
+```
+
 ## Install docker-compose
 
 ```java
